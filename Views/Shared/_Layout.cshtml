@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Radiga Karya Sinergi</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/radiga.styles.css" asp-append-version="true" />
+
+    <link href="~/assets/img/logo.png" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/css/fonts.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+            clear: both;
+            text-align:center;
+            position: relative;
+            z-index: 1;
+        } 
+        html.ie-10 .ie-panel, 
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    @* <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div> *@
+
+    <header class="section page-header">
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                @* <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div> *@
+                <div class="rd-navbar-aside-outer" style="background-color: #0375bb !important;">
+                    <div class="rd-navbar-aside">
+                        <div class="rd-navbar-panel">
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <div class="rd-navbar-brand">
+                                <a class="brand" href="/"><img src="~/assets/img/logo-text.png" alt="" width="225" height="5"/></a>
+                            </div>
+                        </div>
+
+                        <div class="rd-navbar-aside-right rd-navbar-collapse">
+                            <ul class="rd-navbar-corporate-contacts">
+                                <li>
+                                    <div class="unit unit-spacing-xs">
+                                        <div class="unit-left"><span class="icon fa fa-clock-o" style="color: white;"></span></div>
+                                        <div class="unit-body">
+                                            <p>09:00<span>am</span> — 05:00<span>pm</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs">
+                                        <div class="unit-left"><span class="icon fa fa-phone" style="color: white;"></span></div>
+                                        <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            @* <a class="button button-md button-default-outline-2 button-ujarak" href="#">Get a Free Quote</a> *@
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
+                                <li><a class="icon fa fa-facebook" href="#"></a></li>
+                                <li><a class="icon fa fa-twitter" href="#"></a></li>
+                                <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                                <li><a class="icon fa fa-instagram" href="#"></a></li>
+                            </ul>
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a></li>
+                                @* <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a></li> *@
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    @* <main role="main" class="pb-3"> *@
+        @RenderBody()
+    @* </main> *@
+
+    <footer class="section footer-corporate context-dark">
+        <div class="footer-corporate-inset" style="background-color: #2c2f3b !important;">
+            <div class="container">
+                <div class="row row-40 justify-content-lg-between">
+                    <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+                        <div class="oh-desktop">
+                            <div class="wow slideInRight" data-wow-delay="0s">
+                                <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                                <ul class="footer-contacts d-inline-block d-sm-block">
+                                    <li>
+                                        <div class="unit">
+                                            <div class="unit-left"><span class="icon fa fa-phone" style="color: white;"></span></div>
+                                            <div class="unit-body"><a class="link-phone" href="tel:#">+62857 2051 2123</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit">
+                                            <div class="unit-left"><span class="icon fa fa-envelope" style="color: white;"></span></div>
+                                            <div class="unit-body"><a class="link-aemail" href="mailto:#">Radiga.karyasinergi@gmail.com</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit">
+                                            <div class="unit-left"><span class="icon fa fa-location-arrow" style="color: white;"></span></div>
+                                            <div class="unit-body"><a class="link-location" href="#">Jl. Banda no 30 Gd. Graha pos Lt 2 Citarum Bandung 40115</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
+                        <div class="oh-desktop">
+                            <div class="wow slideInDown" data-wow-delay="0s">
+                                <h6 class="text-spacing-100 text-uppercase">Opening Hours</h6>
+                                <ul class="footer-contacts d-inline-block d-sm-block">
+                                    <li>
+                                        <div class="unit">
+                                            <div class="unit-left"><span class="icon fa fa-clock-o" style="color: white;"></span></div>
+                                            <div class="link-phone">09:00AM — 05:00PM</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+                        <div class="oh-desktop">
+                            <div class="wow slideInLeft" data-wow-delay="0s">
+                                <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                                <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+                                    <li><a href="about.html" class="link-phone">About us</a></li>
+                                    <li><a href="#" class="link-phone">Our Tours</a></li>
+                                    <li><a href="#" class="link-phone">Our Team</a></li>
+                                    <li><a href="#" class="link-phone">Gallery</a></li>
+                                    <li><a href="#" class="link-phone">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-corporate-bottom-panel">
+            <div class="container">
+                <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+                    <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                        <div>
+                            <ul class="list-inline list-inline-sm footer-social-list-2">
+                                <li><a class="icon fa fa-facebook" href="#"></a></li>
+                                <li><a class="icon fa fa-twitter" href="#"></a></li>
+                                <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                                <li><a class="icon fa fa-instagram" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 order-sm-first">
+                        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Radiga karya Sinergi</span>. All Rights Reserved. Design by <a href="https://radiga.higertech.com" class="btn-company">Radiga Karya Sinergi</a></p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 text-md-right">
+                        <p class="rights"><a href="#" class="btn-company">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/assets/js/core.min.js"></script>
+    <script src="~/assets/js/script.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Styles", required: false)
+</body>
+</html>
