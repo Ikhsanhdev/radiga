@@ -19614,10 +19614,10 @@ h1 + .tabs-line {
 	}
 	.tabs-line .nav-link:hover,
 	.tabs-line .nav-link.active {
-		color: #01b3a7;
+		color: #24c3f0;
 	}
 	.tabs-line .nav-link.active {
-		border-color: #01b3a7;
+		border-color: #24c3f0;
 	}
 }
 
@@ -19764,7 +19764,7 @@ h1 + .tabs-line {
 		left: 0;
 		height: 3px;
 		width: 0;
-		background: #01b3a7;
+		background: #24c3f0;
 		transition: .22s ease;
 	}
 	.tabs-horizontal.tabs-line .nav-link-big {
@@ -19775,7 +19775,7 @@ h1 + .tabs-line {
 	}
 	.tabs-horizontal.tabs-line .nav-link.active,
 	.tabs-horizontal.tabs-line .nav-link:hover {
-		color: #01b3a7;
+		color: #24c3f0;
 	}
 	.tabs-horizontal.tabs-line .nav-link.active::after {
 		width: 100%;
